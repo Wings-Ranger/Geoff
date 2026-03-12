@@ -1,0 +1,70 @@
+﻿/*Base Styles*/
+body {
+    background-image: url('background.avif');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*Text files*/
+.stan_text {
+    color: #f0f0f0;
+    font-size: 32px;
+    margin: 0;
+}
+
+.highlight-name {
+    color: #00e5ff;
+    margin: 0;
+}
+
+.small_text {
+    color: #f0f0f0;
+    font-size: 16px;
+    margin: 0;
+}
+/* --- WEATHER WIDGET --- */
+.weathersymbol {
+    position: absolute;
+    right: 10.95%;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.weather-icon {
+    font-size: 20px;
+}
+.weather-temp,
+.weather-condition {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;}
+/* --- FOLDERS --- */
+.folder-group {
+    text-align: center;
+    cursor: pointer;}
+.Folder_Image {
+    width: 40px;
+    display: block;
+    margin: 0 auto;}
+.folder-text {
+    color: #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px; }
+/* --- ABSOLUTE POSITIONING (Previously ID_tags.css) --- */
+#welcome {  position: absolute;   right: 4.5%;  top: 20.8%;}
+#Messenger { position: absolute; right: 35%;  top: 55%;}
+#staff_eden { position: absolute;  right: 20%;  top: 55%;}
+#SecureShare {    position: absolute;right: 4.2%;top: 55%;}
+#My_Stuff { position: absolute;right: 36.9%;bottom: 23%;}
+#lock {position: absolute;top: 58%;  right: 5.795%;display: block;}
+#power {position: absolute;bottom: 9%; left: 5.795%;}
+#logout {position: absolute; bottom: 7.5%; left: 5.5%;}
+#media_button {position: absolute;left: 5.795%; bottom: 23%;}
+#media { position: absolute;bottom: 19%;  left: 5.5%;}
+#gridview { position: absolute; bottom: 36%; left: 5.79%;}
+#files {  position: absolute;  bottom: 32.3%;  left: 5.8%;}

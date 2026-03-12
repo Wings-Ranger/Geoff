@@ -1,0 +1,45 @@
+﻿.folder-window {
+    display: none; /* Hidden by default */
+    position: fixed; /* Floats over the rest of the page */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the box perfectly */
+    width: 60%;
+    height: 60%;
+    background-color: rgba(20, 30, 40, 0.95); /* Dark, slightly transparent background */
+    border: 2px solid #00e5ff; /* Matches your highlight color */
+    border-radius: 8px;
+    z-index: 1000; /* Ensures it stays on top of everything else */
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 229, 255, 0.2);
+}
+    .window-header{
+        display:flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        background-color: #00e5ff;
+        color: #000;
+        font-weight:bold;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+    .window-content{
+        padding:20px;
+        color:#f0f0f0;
+        flex-grow:1;
+        overflow-y:auto;
+    }
+    .close-btn{
+        cursor:pointer;
+        background:none;
+        border:none;
+        font-weight:bold;
+        font-size:16px;
+        color:#000;
+    }
+    .close-btn:hover{
+        color:white;
+    }
+.error {
+    color: #ff3333; font-weight: bold; display: none; margin-top: 15px; display: none;
+}

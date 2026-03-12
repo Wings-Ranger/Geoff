@@ -1,0 +1,100 @@
+﻿/* --- MAIN LAYOUT (The Left/Right Split) --- */
+body {
+    display: flex; /* Puts the sidebar and screen-content side-by-side */
+}
+
+/* --- THE LEFT SIDEBAR --- */
+.sidebar {
+    width: 100px; /* Width of the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes Files/Media up, and Log Out down */
+    padding: 60px 20px; /* Spacing from the top/bottom and sides */
+    box-sizing: border-box;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column; /* Stacks the icon on top of the text */
+    align-items: center; /* Centers them horizontally */
+    margin-bottom: 30px; /* Space between each sidebar button */
+    cursor: pointer;
+}
+
+    .sidebar-item img {
+        width: 36px;
+        margin-bottom: 5px; /* Tiny gap between the icon and its label */
+    }
+
+.small_text {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* --- THE MAIN SCREEN (Top Bar & Folders) --- */
+.screen-content {
+    flex-grow: 1; /* Tells the main screen to take up the rest of the window */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+/* --- THE DESKTOP FOLDERS --- */
+.desktop-area {
+    flex-grow: 1;
+    display: flex;
+    align-items: center; /* Vertically centers the grid */
+    justify-content: flex-end; /* Pushes grid to the right */
+    padding-right: 10%;
+}
+
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 110px); /* 3 columns */
+    gap: 40px 50px;
+    justify-items: center;
+}
+
+.folder-group {
+    text-align: center;
+    cursor: pointer;
+}
+
+.Folder_Image {
+    width: 50px; /* Made slightly larger to match the screenshot */
+    margin-bottom: 5px;
+}
+
+/* --- TEXT STYLING --- */
+.stan_text {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.highlight-name {
+    color: #00e5ff;
+}
+
+.folder-text {
+    font-size: 14px;
+    font-weight: bold;
+    display: block; /*Forces the text to align with the images*/
+}
+
+.weathersymbol {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: bold;
+}
